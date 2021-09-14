@@ -1,0 +1,74 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.select-label {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  color: #756f86;
+  margin-bottom: 7px;
+}
+.select-lable_active {
+  border: 2px solid #0880ae;
+}
+.select-lable-field {
+  width: 100%;
+  height: 52px;
+  padding: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  border: 1px solid #dbe2ea;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #7c9cbf;
+  cursor: pointer;
+}
+.select-lable-field_open {
+  border: 2px solid #0880ae;
+  padding: 15px;
+}
+.select-lable-field_active {
+  color: #2c2738;
+}
+.select-lable-field::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  z-index: 1;
+  background: url("../../Icons/Arrow.svg") no-repeat;
+}
+.select-dropdown {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #dbe2ea;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04),
+    0px 20px 20px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  color: #756f86;
+  z-index: 3;
+}
+.select-dropdown-field {
+  padding: 13px 16px;
+  cursor: pointer;
+}
+.select-dropdown-field_selected {
+  background: #ebf4f8;
+}
+.select-dropdown-field:hover {
+  background: #ebf4f8;
+}
