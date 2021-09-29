@@ -56,10 +56,7 @@ const App = () => {
   const handlerBlur = (event) => {
     switch (event.target.name) {
       case "name":
-        name 
-          ? 
-        setNameError("") 
-          : setNameError("Поле Имя не может быть пустым");
+        name ? setNameError("") : setNameError("Поле Имя не может быть пустым");
         break;
       case "email":
         email
@@ -134,7 +131,7 @@ const App = () => {
             placeholder="Введите Ваш email"
           />
           <CustomInput
-            label="Телефон"
+            label="Номер телефона"
             name="phone"
             value={phone}
             error={phoneError}
